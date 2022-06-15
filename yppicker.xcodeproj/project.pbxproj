@@ -16,6 +16,7 @@
 		7351008B283B469E004FE9E6 /* yppickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7351008A283B469E004FE9E6 /* yppickerTests.swift */; };
 		73510095283B469E004FE9E6 /* yppickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73510094283B469E004FE9E6 /* yppickerUITests.swift */; };
 		73510097283B469E004FE9E6 /* yppickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73510096283B469E004FE9E6 /* yppickerUITestsLaunchTests.swift */; };
+		735100A5283B4735004FE9E6 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 735100A4283B4735004FE9E6 /* YPImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735100A5283B4735004FE9E6 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = yppicker;
+			packageProductDependencies = (
+				735100A4283B4735004FE9E6 /* YPImagePicker */,
+			);
 			productName = yppicker;
 			productReference = 73510070283B469D004FE9E6 /* yppicker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 73510067283B469D004FE9E6;
+			packageReferences = (
+				735100A3283B4735004FE9E6 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+			);
 			productRefGroup = 73510071283B469D004FE9E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,11 +448,14 @@
 				DEVELOPMENT_TEAM = MFN25KNUGJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yppicker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +479,14 @@
 				DEVELOPMENT_TEAM = MFN25KNUGJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yppicker/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		735100A3283B4735004FE9E6 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		735100A4283B4735004FE9E6 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 735100A3283B4735004FE9E6 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73510068283B469D004FE9E6 /* Project object */;
 }
